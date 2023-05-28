@@ -5,12 +5,12 @@ const members = [
       status: 'active',
     },
     {
-      id: 1,
+      id: 2,
       name: 'ejn alam',
       status: 'active',
     },
     {
-      id: 1,
+      id: 3,
       name: 'John Doe',
       status: 'active',
     },
