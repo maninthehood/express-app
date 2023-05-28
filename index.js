@@ -1,16 +1,15 @@
 const members = require('./members');
 const path = require('path');
 const express = require('express');
+const moment = require('moment')
+const logger = require('./middleware/logger')
 const port = 3010;
 const app = express();
 
-// Create middlewear
-const logger = (req, res, next) => {
-  console.log(`${req.protocol}://${req.get('host')}`);
-  next();
-};
+// Create middleware
 
-// Init middlewear
+
+// Init middleware
 app.use(logger);
 
 app.use(express.static(path.join(__dirname, 'public')));
