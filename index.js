@@ -16,7 +16,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.get('/api/members', (req, res) => res.json(members));
 
 app.get('/api/members:id', (req, res) => res.json(members.filter(member => {
-  return member.id === parseInt(req.params.id)
+  return member.id == req.params.id
 })))
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
