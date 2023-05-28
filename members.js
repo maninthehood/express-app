@@ -1,4 +1,4 @@
-const members = [
+const members = [      
     {
       id: 1,
       name: 'John Doe',
@@ -14,7 +14,6 @@ const members = [
       name: 'John Doe',
       status: 'active',
     },
-  ];
-
+  ]
 
 module.exports = members
